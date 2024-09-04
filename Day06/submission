@@ -1,0 +1,73 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int size, sum = 0;
+    
+   
+    cin >> size;
+    
+    int arr[size];
+    
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+        sum += arr[i];
+    }
+    
+    cout << sum;
+    
+    return 0;
+}
+2.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int size, sumOdd = 0, sumEven = 0;
+    
+   
+    cin >> size;
+    
+    int arr[size];
+    
+  
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+        if (arr[i] % 2 == 0) {
+            sumEven += arr[i];
+        } else {
+            sumOdd += arr[i];
+        }
+    }
+    
+    cout << sumOdd << endl;
+    cout << sumEven;
+    
+    return 0;
+}
+3.
+#include <bits/c++.h>
+using namespace std;
+
+int main() {
+    int size, countOdd = 0, countEven = 0;
+   
+    cin >> size;
+    
+    int arr[size];
+    
+  
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+        if (arr[i] % 2 == 0) {
+            countEven++;
+        } else {
+            countOdd++;
+        }
+    }
+    
+    cout << "Number of odd numbers: " << countOdd << endl;
+    cout << "Number of even numbers: " << countEven;
+    
+    return 0;
+}
